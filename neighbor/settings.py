@@ -78,22 +78,14 @@ WSGI_APPLICATION = 'neighbor.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'neighbor',
         'USER': 'wecode',
-        'PASSWORD':'DB',
+    'PASSWORD':'DB',
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'tribune',
-#         'USER': '<Your Database Username >',
-#     'PASSWORD':'<Your Database Password>',
-#     }
-# }
+
 
 
 # Password validation
